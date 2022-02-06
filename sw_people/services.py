@@ -45,6 +45,7 @@ def fetch_latest_characters():
     )
     filename = f"{datetime.now().timestamp()}.csv"
     petl.tocsv(data, f"{settings.DATA_DIR}/{filename}")
+    # TODO: ensure DATA_DIR exists
     DownloadedFile(filename=filename).save()
 
 
