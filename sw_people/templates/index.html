@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>    
+    {% include 'header.html' %}
+    <body>
+        <button type="button" class="fetch" ><a href="{% url 'fetch' %}">Fetch latest</a></button>
+        <div class="list-container">
+            <ul>
+                {% for f in files %}
+                    <li><a href="{% url 'file' filename=f.filename page=1 %}">{{ f.date |date:'Y-m-d H:i' }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </body>
+</html>

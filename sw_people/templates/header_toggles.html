@@ -1,0 +1,6 @@
+
+<form method="POST" filename=filename %}>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Get Value Counts">
+</form>
