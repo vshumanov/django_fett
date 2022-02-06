@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django_fett"
+version = "0.1.0"
+description = "Djnago project for fetching Star Wars characters data"
+authors = ["VSh <vl.shumanov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.0.2"
+petl = "^1.7.7"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
